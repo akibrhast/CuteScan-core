@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+#  File from mac
+.DS_Store
+
+# Test folder for form
+views
