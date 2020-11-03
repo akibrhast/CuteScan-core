@@ -105,3 +105,6 @@ dist
 
 #  File from mac
 .DS_Store
+
+# Test folder for form
+views
