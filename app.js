@@ -1,15 +1,16 @@
 const express = require('express');
 const ExpressError = require("./expressError")
-const dataRoutes = require("./dataRoutes")
+const upload_routes = require("./routes/uploads")
+const download_routes = require("./routes/downloads")
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/', express.static(__dirname + '/public')); 
 
 
-app.use("/", dataRoutes);
+app.use("/", upload_routes);
+app.use("/", download_routes);
 
 
 app.use(function (req, res, next) {

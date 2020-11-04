@@ -108,3 +108,10 @@ dist
 
 # Test folder for form
 views
+
+
+#Folder where image uploads are saved
+uploads/*
+
+
+.vscode/
