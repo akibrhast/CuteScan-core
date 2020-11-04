@@ -112,3 +112,6 @@ views
 
 #Folder where image uploads are saved
 uploads/*
+
+
+.vscode/
