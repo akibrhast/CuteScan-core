@@ -12,7 +12,7 @@ router.get('/api/download_single', (req, res, next) => {
     }
 });
 
-router.get('/api/donwload_multiple', (req, res, next) => {
+router.get('/api/download_multiple', (req, res, next) => {
     try {
         return res.status(201).json({
             message: 'download_multiple'
