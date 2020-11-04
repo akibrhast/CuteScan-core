@@ -1,0 +1,58 @@
+/**
+ * ROUTE: /api/download_single
+ * METHOD:get
+ * BODY:json
+ * BODY_CONTENT:{"file_id":1}
+ * RETURN:{
+ *          "id":"",
+ *          "file_name":
+ *          "file_url":
+ *          "file_metadata": [dimension,extension... etc],
+ *          "ocr_completion_status": boolean
+ *          "ocr_completion_data": 
+ *         }
+ *  
+ * / 
+
+/** 
+ * ROUTE: /api/donwload_multiple
+ * METHOD: get
+ * BODY:JSON
+ * BODY_CONTENT: {"file_id":[1,2]}
+ * RETURN:{[{
+ *          "id":"1",
+ *          "file_name":
+ *          "file_url":
+ *          "file_metadata": [dimension,extension... etc],
+ *          "ocr_completion_status": boolean
+ *          "ocr_completion_data": 
+ *          },
+ *          {
+ *          "id":"2",
+ *          "file_name":
+ *          "file_url":
+ *          "file_metadata": [dimension,extension... etc],
+ *          "ocr_completion_status": boolean
+ *          "ocr_completion_data": 
+ *          }
+ *         ]}
+ * 
+ * */ 
+
+/**
+ * ROUTE: /api/upload_single
+ * METHOD: post
+ * HEADER: {"Content-Type":"multipart/form-data"}
+ * FILE: Multipart encoded image file with filename
+ * RETURN: {"status_code": "201", "file_id":[123]}
+ */
+
+ /* *
+ * ROUTE: /api/upload_multiple
+ * METHOD: post
+ * HEADER: {"Content-Type":"multipart/form-data"}
+ * FILE: Multipart encoded image file with filename
+ * FILE: Multipart encoded image file with filename
+ * FILE: Multipart encoded image file with filename
+ * RETURN: {"status_code": "201", "file_id":[123,213,4345] }
+ */
