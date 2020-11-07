@@ -33,4 +33,4 @@ router.get('/api/donwload_all', (req, res, next) => {
     }
 });
 
-module.exports = router
+module.exports = router;

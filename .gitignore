@@ -107,11 +107,13 @@ dist
 .DS_Store
 
 # Test folder for form
-views
-
+# views
 
 #Folder where image uploads are saved
 uploads/*
+
+# Google Drive API Credentials
+credentials.json
 
 
 .vscode/
