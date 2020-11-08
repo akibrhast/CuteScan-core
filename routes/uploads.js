@@ -12,7 +12,7 @@ const CLIENT_ID = OAuth2Data.web.client_id;
 const CLIENT_SECRET = OAuth2Data.web.client_secret;
 const REDIRECT_URI = OAuth2Data.web.redirect_uris[0];
 
-const OAuth2Client = require('./auth')
+const auth = require('./auth')
 
 // Don't forgot to make folder uploads in main folder, otherwise you will get an error
 
@@ -25,7 +25,7 @@ router.post("/api/upload_single", (req, res) => {
         console.log(req.file.path);
         const drive = google.drive({ 
             version: "v3",
-            auth: OAuth2Client  
+            auth: auth.oAuth2Client  
             });
         const fileMetadata = {
           name: req.file.filename,

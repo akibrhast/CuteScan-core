@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/', upload_routes);
 app.use('/', download_routes);
-app.use('/', auth_routes);
+app.use('/', auth_routes.router);
 
 
 app.use(function (req, res, next) {
